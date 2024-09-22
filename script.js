@@ -6,11 +6,6 @@ let array = []
 loginBtn.addEventListener('click', function() {
   array.push(userName.value)
   array.push(password.value)
-  callArray(array)
+  alert(array)
+  array = []
 })
-
-function callArray(list){
-  for (let ele of list){
-    alert(ele)
-  }
-}
