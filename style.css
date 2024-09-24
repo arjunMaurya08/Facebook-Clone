@@ -87,4 +87,17 @@ hr{
     align-items: center;
 }
 
+#dark-mode-btn{
+    background-color: black;
+    color: whitesmoke;
+    padding: 5px 15px;
+    border-radius: 5px;
+
+}
+
+.dark-mode-btn{
+    display: flex;
+    justify-content: right;
+}
+
 /* Arjun Maurya */
