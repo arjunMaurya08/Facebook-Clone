@@ -27,7 +27,7 @@ darkModeBtn.addEventListener('click', function setBgColor() {
   if (document.body.style.backgroundColor !== "black") {
     document.body.style.backgroundColor = "black"
     document.body.style.color = "white"
-    darkModeBtn.style.backgroundImage = "url('./assets/lightmode.png')"
+    darkModeBtn.style.backgroundImage = "url('./assets/lightMode.png')"
   } else {
     document.body.style.backgroundColor = "#F0F2F5"
     document.body.style.color = "black"
