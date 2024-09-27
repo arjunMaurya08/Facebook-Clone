@@ -1,5 +1,3 @@
-
-
 body{
     background-color: #F0F2F5;
 }
@@ -88,16 +86,28 @@ hr{
 }
 
 #dark-mode-btn{
-    background-color: black;
-    color: whitesmoke;
-    padding: 5px 15px;
-    border-radius: 5px;
-
+    border-radius: 50%;
+    background: url('assets/darkMode.png');
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    border: 2px solid whitesmoke;
+    position: fixed;
 }
 
 .dark-mode-btn{
     display: flex;
     justify-content: right;
 }
+
+.create-page-link{
+    font-size: large;
+    font-weight: bolder;
+}
+
+.create-page-link:hover{
+    cursor: pointer;
+}
+
 
 /* Arjun Maurya */

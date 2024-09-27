@@ -11,7 +11,7 @@
 
 <body id="main">
     <div class="dark-mode-btn">
-        <button id="dark-mode-btn">Dark Mode</button>
+        <button id="dark-mode-btn"></button>
     </div>
     <div class="mainContent">
         <div class="logoAndHeadline">
@@ -23,22 +23,23 @@
             </div>
         </div>
         <div class="box1">
-            <input type="email" class="idpass" id="username" placeholder="Email address or phone number">
-            <input type="password" class="idpass" id="password" placeholder="Password" type="password">
-            <button class="login" id="login-btn">Log in</button>
-            <a href="#" class="forget-password-btn" style="color: #1877F2; text-decoration: none;">Forget Password?</a>
-            <br>
-            <br>
+            <form>
+                <input type="email" class="idpass" id="username" placeholder="Email address or phone number">
+                <input type="password" class="idpass" id="password" placeholder="Password" type="password">
+                <button class="login" id="login-btn">Log in</button>
+                <a href="#" class="forget-password-btn" style="color: #1877F2; text-decoration: none;">Forget
+                    Password?</a>
+                <br>
+                <br>
 
-            <hr>
-            <br>
-            <button id="create-new-account" class="newacc" style="color: white;">Create New Account</button>
+                <hr>
+                <br>
+                <button id="create-new-account" class="newacc" style="color: white;">Create New Account</button>
+            </form>
         </div>
     </div>
     <div class="belowbox">
-        <p> <a href="#"
-                style="text-decoration: none; font-weight: bolder; color: black; font-family: Arial, Helvetica, sans-serif; font-size: small;">Create
-                a Page </a> for a celebrity, brand or business.</p>
+        <p><span class="create-page-link">Create a Page</span> for a celebrity, brand or business.</p>
     </div>
 
     <script src="script.js"></script>

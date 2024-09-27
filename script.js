@@ -4,6 +4,7 @@ const password = document.getElementById('password')
 const darkModeBtn = document.getElementById('dark-mode-btn')
 const forgetPasswordBtn = document.querySelector('.forget-password-btn')
 const createNewAccountBtn = document.getElementById('create-new-account')
+// const box1 = document.querySelector('.box1')
 
 
 let array = []
@@ -22,17 +23,15 @@ loginBtn.addEventListener('click', function () {
 })
 
 
-darkModeBtn.addEventListener('click', setBgColor)
-
-function setBgColor() {
-  if (document.body.style.backgroundColor === 'white') {
-    document.body.style.backgroundColor = 'black';
-    // document.darkModeBtn.style.backgroundColor = 'white';
-    // document.darkModeBtn.style.color = 'white';
+darkModeBtn.addEventListener('click', function setBgColor() {
+  if (document.body.style.backgroundColor !== "black") {
+    document.body.style.backgroundColor = "black"
+    document.body.style.color = "white"
   } else {
-    document.body.style.backgroundColor = 'white';
+    document.body.style.backgroundColor = "#F0F2F5"
+    document.body.style.color = "black"
   }
-}
+})
 
 forgetPasswordBtn.addEventListener('click', function () {
   alert("You Have Clicked Forget Password!!")
