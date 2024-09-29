@@ -24,8 +24,8 @@ loginBtn.addEventListener('click', function () {
 
 
 darkModeBtn.addEventListener('click', function setBgColor() {
-  if (document.body.style.backgroundColor !== "black") {
-    document.body.style.backgroundColor = "black"
+  if (document.body.style.backgroundColor === "" || document.body.style.backgroundColor === "rgb(240, 242, 245)") {
+    document.body.style.backgroundColor = "#252525"
     document.body.style.color = "white"
     darkModeBtn.style.backgroundImage = "url('./assets/lightMode.png')"
   } else {
