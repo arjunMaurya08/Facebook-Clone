@@ -21,7 +21,8 @@ h2{
 
 .box1{
     width: 396px;
-    height: 315.828px;
+    height: auto;
+    min-height: 315.828px;
     background-color: #fff;
     display: inline-block;
     margin-left: 500px;

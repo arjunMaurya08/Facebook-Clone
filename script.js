@@ -4,14 +4,20 @@ const password = document.getElementById('password')
 const darkModeBtn = document.getElementById('dark-mode-btn')
 const forgetPasswordBtn = document.querySelector('.forget-password-btn')
 const createNewAccountBtn = document.getElementById('create-new-account')
-// const box1 = document.querySelector('.box1')
+const errorMessageEl = document.getElementById('error-message')
 
 
 let array = []
 
-loginBtn.addEventListener('click', function () {
+loginBtn.addEventListener('click', function (event) {
+  event.preventDefault()
   if (userName.value.length === 0 || password.value.length === 0) {
-    alert("Please Enter valid username and passoword!!")
+    const errorMessage = document.createElement('p');
+    errorMessage.textContent = "Please Enter valid username and password!!";
+    errorMessage.style.color = "red";
+    forgetPasswordBtn.insertAdjacentElement('afterend', errorMessage);
+    userName.value = ""
+    password.value = ""
   } else {
     array.push(userName.value)
     array.push(password.value)
