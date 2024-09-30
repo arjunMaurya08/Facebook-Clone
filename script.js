@@ -12,16 +12,34 @@ let array = []
 loginBtn.addEventListener('click', function (event) {
   event.preventDefault()
   if (userName.value.length === 0 || password.value.length === 0) {
-    const errorMessage = document.createElement('p');
-    errorMessage.textContent = "Please Enter valid username and password!!";
-    errorMessage.style.color = "red";
-    forgetPasswordBtn.insertAdjacentElement('afterend', errorMessage);
+    if (!document.getElementById('error-message')) {
+      const errorMessage = document.createElement('p');
+      errorMessage.id = 'error-message';
+      errorMessage.textContent = "Please Enter valid username and password!!";
+      errorMessage.style.color = "red";
+      forgetPasswordBtn.insertAdjacentElement('afterend', errorMessage);
+    }
     userName.value = ""
     password.value = ""
   } else {
     array.push(userName.value)
     array.push(password.value)
-    alert(array)
+    // alert(array)
+    const existingUserInfo = document.getElementById('user-info');
+    if (existingUserInfo) {
+      existingUserInfo.remove();
+    }
+    if (!document.getElementById('user-info')) {
+      const userInfo = document.createElement('p');
+      userInfo.id = 'user-info';
+      userInfo.style.color = "green";
+      userInfo.textContent = `Your username is ${array[0]} and password is ${array[1]}`;
+      forgetPasswordBtn.insertAdjacentElement('afterend', userInfo);
+    }
+    const existingErrorMessage = document.getElementById('error-message');
+    if (existingErrorMessage) {
+      existingErrorMessage.remove();
+    }
     userName.value = ""
     password.value = ""
     array = []
@@ -46,6 +64,6 @@ forgetPasswordBtn.addEventListener('click', function () {
 })
 
 
-createNewAccountBtn.addEventListener('click', function(){
+createNewAccountBtn.addEventListener('click', function () {
   alert("You are redirecting for creating your account...")
 })
