@@ -12,6 +12,10 @@ let array = []
 loginBtn.addEventListener('click', function (event) {
   event.preventDefault()
   if (userName.value.length === 0 || password.value.length === 0) {
+    const existingUserInfo = document.getElementById('user-info');
+    if (existingUserInfo) {
+      existingUserInfo.remove();
+    }
     if (!document.getElementById('error-message')) {
       const errorMessage = document.createElement('p');
       errorMessage.id = 'error-message';
