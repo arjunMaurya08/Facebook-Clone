@@ -6,18 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Create New Account</title>
     <link rel="stylesheet" href="newAccount.css">
+    <link rel="icon" href="assets/favicon.webp">
 </head>
 
 <body>
     <img src="https://static.xx.fbcdn.net/rsrc.php/y1/r/4lCu2zih0ca.svg" alt="Facebook logo" width="302.77px">
-    <h1>Create New Account</h1>
+    <h2>Create New Account</h2>
     <div class="form">
         <form action="/submit_new_account" method="post">
             <input type="text" id="firstname" name="firstname" placeholder="First Name" required>
-
             <input type="text" id="lastname" name="lastname" placeholder="Surname" required>
-
-            <input type="submit" value="Create Account">
+            <input type="text" id="phonenumber" name="phonenumber" placeholder="Phone" required>
+            <input type="password" id="password" name="password" placeholder="Password" required>
+            <input id="submit-btn" type="submit" value="Create Account">
         </form>
     </div>
 </body>

@@ -70,4 +70,5 @@ forgetPasswordBtn.addEventListener('click', function () {
 
 createNewAccountBtn.addEventListener('click', function () {
   alert("You are redirecting for creating your account...")
+  window.location.href = 'newAccount.html';
 })

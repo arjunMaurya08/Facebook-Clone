@@ -1,5 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 .form{
-    background-color: aqua;
+    margin: 0 auto;
+    text-align: center;
+    background-color: rgba(238, 233, 231, 0.486);
     width: 432px;
-    padding: 20px;
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: 5px;
+    height: 70vh;
     }
+
+#submit-btn{
+    padding: 10px 20px;
+    display: block;
+    margin: 10px auto;
+    border-radius: 5px;
+    border-style: none;
+    background-color: #42b72ae3;
+}
+
+#submit-btn:hover{
+    background-color: #42b72a;
+}
+
+input{
+    padding: 5px;
+    border-radius: 5px;
+    border-style: none;
+    margin: 5px;
+    /* border: 0.1px solid black; */
+}
