@@ -4,21 +4,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Create New Account</title>
+    <title>Sign up for Facebook</title>
     <link rel="stylesheet" href="newAccount.css">
     <link rel="icon" href="assets/favicon.webp">
 </head>
 
 <body>
     <img src="https://static.xx.fbcdn.net/rsrc.php/y1/r/4lCu2zih0ca.svg" alt="Facebook logo" width="302.77px">
-    <h2>Create New Account</h2>
     <div class="form">
+        <h2>Create a New Account</h2>
+        <p>it's quick and easy</p>
+        <hr>
         <form action="/submit_new_account" method="post">
-            <input type="text" id="firstname" name="firstname" placeholder="First Name" required>
-            <input type="text" id="lastname" name="lastname" placeholder="Surname" required>
-            <input type="text" id="phonenumber" name="phonenumber" placeholder="Phone" required>
-            <input type="password" id="password" name="password" placeholder="Password" required>
-            <input id="submit-btn" type="submit" value="Create Account">
+            <div class="content">
+                <input type="text" id="firstname" name="firstname" placeholder="First Name" required>
+                <input type="text" id="lastname" name="lastname" placeholder="Surname" required>
+
+                <select id="day" name="day" required>
+                    <option value="" disabled selected>Day</option>
+                    <script>
+                        for (let i = 1; i <= 31; i++) {
+                            document.write(`<option value="${i}">${i}</option>`);
+                        }
+                    </script>
+                </select>
+                <select id="month" name="month" required>
+                    <option value="" disabled selected>Month</option>
+                    <script>
+                        for (let i = 1; i <= 12; i++) {
+                            document.write(`<option value="${i}">${i}</option>`);
+                        }
+                    </script>
+                </select>
+                <select id="year" name="year" required>
+                    <option value="" disabled selected>Year</option>
+                    <script>
+                        for (let i = 1900; i <= 2100; i++) {
+                            document.write(`<option value="${i}">${i}</option>`);
+                        }
+                    </script>
+                </select>
+                <div>
+
+                    <input type="radio" id="male" name="gender" value="male" required>
+                    <label for="male">Male</label>
+
+
+                    <input type="radio" id="female" name="gender" value="female" required>
+                    <label for="female">Female</label>
+
+
+                    <input type="radio" id="custom" name="gender" value="custom" required>
+                    <lor="custom">Custom</label>
+
+                </div>
+                <input class="emailPass" type="text" placeholder="Mobile number or email address">
+                <input class="emailPass" type="password" placeholder="Password">
+                <p class="para">People who use our service may have uploaded your contact information to Facebook. <a
+                        href="#">Learn more.</a></p>
+                <p class="para">By clicking Sign Up, you agree to our Terms, Privacy Policy and Cookies Policy. You may
+                    receive SMS
+                    notifications from us and can opt out at any time.</p>
+                <input id="submit-btn" type="submit" value="Sign up">
+            </div>
         </form>
     </div>
 </body>

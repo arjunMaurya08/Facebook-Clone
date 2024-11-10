@@ -3,25 +3,32 @@
     padding: 0;
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* background-color: rgba(238, 233, 231, 0.486); */
+}
+
+body{
+    background-color: rgba(238, 233, 231, 0.486);
 }
 
 .form{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     margin: 0 auto;
     text-align: center;
-    background-color: rgba(238, 233, 231, 0.486);
+    background-color: white;
     width: 432px;
     padding: 15px;
-    border: 1px solid black;
     border-radius: 5px;
     height: 70vh;
     }
 
 #submit-btn{
-    padding: 10px 20px;
+    font: bold 15px Arial;
+    padding: 10px 70px;
     display: block;
     margin: 10px auto;
     border-radius: 5px;
     border-style: none;
+    color: white;
     background-color: #42b72ae3;
 }
 
@@ -30,9 +37,27 @@
 }
 
 input{
-    padding: 5px;
+    padding: 10px;
     border-radius: 5px;
     border-style: none;
     margin: 5px;
-    /* border: 0.1px solid black; */
+    border: 0.1px solid #ccd0d5;
+}
+
+hr{
+    margin: 15px;
+}
+
+p{
+    color: #777777;
+    font-size: smaller;
+}
+
+.para{
+    font-size: x-small;
+}
+
+.emailPass{
+    display: block;
+    width: 400px;
 }
