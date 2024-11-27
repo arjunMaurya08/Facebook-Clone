@@ -16,9 +16,10 @@ body{
     text-align: center;
     background-color: white;
     width: 432px;
+    /* width: auto; */
     padding: 15px;
     border-radius: 5px;
-    height: 70vh;
+    /* height: 70vh; */
     }
 
 #submit-btn{
@@ -37,6 +38,7 @@ body{
 }
 
 input{
+    text-align: left;
     padding: 10px;
     border-radius: 5px;
     border-style: none;
@@ -55,6 +57,7 @@ p{
 
 .para{
     font-size: x-small;
+    text-align: left;
 }
 
 .emailPass{
